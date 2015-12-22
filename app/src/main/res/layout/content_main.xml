@@ -18,71 +18,34 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <Button style="@style/launcherButton"
         android:text="Spotify Streamer"
         android:id="@+id/spotifyButton"
-        android:layout_gravity="center_horizontal"
-        android:layout_above="@+id/scoresAppButton"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:background="@color/buttonOrange"
-        android:layout_marginBottom="10dp" />
+        android:layout_above="@+id/scoresAppButton"/>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <Button style="@style/launcherButton"
         android:text="Scores App"
         android:id="@+id/scoresAppButton"
-        android:layout_column="3"
-        android:layout_above="@+id/libraryAppButton"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:background="@color/buttonOrange"
-        android:layout_marginBottom="10dp" />
+        android:layout_above="@+id/libraryAppButton"/>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <Button style="@style/launcherButton"
         android:text="Library APP"
         android:id="@+id/libraryAppButton"
-        android:layout_above="@+id/buildButton"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="10dp"
-        android:background="@color/buttonOrange" />
+        android:layout_above="@+id/buildButton"/>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <Button style="@style/launcherButton"
         android:text="XYZ READER"
         android:id="@+id/xyzButton"
-        android:layout_below="@+id/buildButton"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:background="@color/buttonOrange"
-        android:layout_marginBottom="10dp" />
+        android:layout_below="@+id/buildButton"/>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <Button style="@style/launcherButton"
         android:text="BUILD IT BIGGER"
         android:id="@+id/buildButton"
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:background="@color/buttonOrange"
-        android:layout_marginBottom="10dp" />
+        android:layout_centerVertical="true"/>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <Button style="@style/launcherButton"
         android:text="CAPSTONE - My App"
         android:id="@+id/capstoneButton"
         android:layout_below="@+id/xyzButton"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:background="@color/buttonRed"
- />
+        android:background="@color/buttonRed"/>
 </RelativeLayout>
