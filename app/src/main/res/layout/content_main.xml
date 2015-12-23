@@ -9,47 +9,61 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_main" tools:context=".MainActivity">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="My Nanodegree Apps"
         android:id="@+id/titleTextView"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_above="@+id/spotifyButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentTop="true"/>
 
-    <Button style="@style/launcherButton"
-        android:text="Spotify Streamer"
-        android:id="@+id/spotifyButton"
-        android:layout_above="@+id/scoresAppButton"/>
 
-    <Button style="@style/launcherButton"
-        android:text="Scores App"
-        android:id="@+id/scoresAppButton"
-        android:layout_above="@+id/libraryAppButton"/>
+        <Button style="@style/launcherButton"
+            android:text="Spotify Streamer"
+            android:id="@+id/spotifyButton"
+            android:layout_above="@+id/scoresAppButton"/>
 
-    <Button style="@style/launcherButton"
-        android:text="Library APP"
-        android:id="@+id/libraryAppButton"
-        android:layout_above="@+id/buildButton"/>
+        <Button style="@style/launcherButton"
+            android:text="Scores App"
+            android:id="@+id/scoresAppButton"
+            android:layout_above="@+id/libraryAppButton"/>
 
-    <Button style="@style/launcherButton"
-        android:text="BUILD IT BIGGER"
-        android:id="@+id/buildButton"
-        android:layout_above="@+id/xyzButton"/>
+        <Button style="@style/launcherButton"
+            android:text="Library APP"
+            android:id="@+id/libraryAppButton"
+            android:layout_above="@+id/buildButton"/>
 
-    <Button style="@style/launcherButton"
-        android:text="XYZ READER"
-        android:id="@+id/xyzButton"
-        android:layout_above="@+id/capstoneButton"
-       />
+        <Button style="@style/launcherButton"
+            android:text="BUILD IT BIGGER"
+            android:id="@+id/buildButton"
+            android:layout_above="@+id/xyzButton"/>
 
-    <Button style="@style/launcherButton"
-        android:text="CAPSTONE - My App"
-        android:id="@+id/capstoneButton"
-        android:background="@color/buttonRed"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="148dp" />
+        <Button style="@style/launcherButton"
+            android:text="XYZ READER"
+            android:id="@+id/xyzButton"
+            android:layout_above="@+id/capstoneButton"
+            />
+
+        <Button style="@style/launcherButton"
+            android:text="CAPSTONE - My App"
+            android:id="@+id/capstoneButton"
+            android:background="@color/buttonRed"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+    </LinearLayout>
+</ScrollView>
+
 </RelativeLayout>
