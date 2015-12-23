@@ -34,18 +34,22 @@
         android:layout_above="@+id/buildButton"/>
 
     <Button style="@style/launcherButton"
-        android:text="XYZ READER"
-        android:id="@+id/xyzButton"
-        android:layout_below="@+id/buildButton"/>
-
-    <Button style="@style/launcherButton"
         android:text="BUILD IT BIGGER"
         android:id="@+id/buildButton"
-        android:layout_centerVertical="true"/>
+        android:layout_above="@+id/xyzButton"/>
+
+    <Button style="@style/launcherButton"
+        android:text="XYZ READER"
+        android:id="@+id/xyzButton"
+        android:layout_above="@+id/capstoneButton"
+       />
 
     <Button style="@style/launcherButton"
         android:text="CAPSTONE - My App"
         android:id="@+id/capstoneButton"
-        android:layout_below="@+id/xyzButton"
-        android:background="@color/buttonRed"/>
+        android:background="@color/buttonRed"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="148dp" />
 </RelativeLayout>
